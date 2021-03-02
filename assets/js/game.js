@@ -157,7 +157,7 @@ var shop = function() {
     "Would you like to REFILL your health, UPGRADE your attack, or LEAVE the store? Please enter one 1 for REFILL, 2 for UPGRADE, or 3 for LEAVE."
   );
 
-  // check if prompt answer was left blank, player hit "cancel", or provided a number instead
+  // check if prompt answer was left blank, player hit "cancel", or provided a text instead of a number
   if (shopOptionPrompt === null || shopOptionPrompt === "" || isNaN(shopOptionPrompt)) {
     window.alert("You need to provide a valid answer! Please try again.");
     return shop();
