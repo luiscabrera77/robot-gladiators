@@ -76,7 +76,7 @@ var endGame = function() {
 
 // fight function (now with parameter for enemy's object holding name, health, and attack values)
 var fight = function(enemy) {
-  // keep track of who goes first
+  // keep track of who goes first, initialize a value
   var isPlayerTurn = true;
 
   // randomly change turn order
@@ -145,7 +145,7 @@ var fight = function(enemy) {
         window.alert(playerInfo.name + " still has " + playerInfo.health + " health left.");
       }
     }
-    // switch turn order for next round
+    // switch turn order for next round... ! is known as the not operator
     isPlayerTurn = !isPlayerTurn;
   }
 };
